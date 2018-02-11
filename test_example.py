@@ -2,8 +2,7 @@ import pytest
 
 @pytest.fixture
 def chrome_options(chrome_options):
-    chrome_options.binary_location = '/usr/lib/chromium-browser/chromedriver'
-    chrome_options.add_argument('--headless')
+    chrome_options.set_headless()
     return chrome_options
 
 def test_example(selenium):

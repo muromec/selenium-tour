@@ -14,5 +14,8 @@ script:
 addons:
   apt:
     packages:
-      - chromium-browser
       - chromium-chromedriver
+      - google-chrome-stable
+
+    sources:
+      - google-chrome

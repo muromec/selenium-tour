@@ -9,4 +9,7 @@ script:
   - pytest --driver Chrome
 
 addons:
-  chrome: stable
+  apt:
+    packages:
+      - chromium-browser
+      - chromium-chromedriver
